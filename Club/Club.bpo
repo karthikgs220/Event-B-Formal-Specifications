@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="86">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="70">
+        <org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="70">
+        <org.eventb.core.poIdentifier name="count" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="member" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="waiting" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))∩(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu'" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="count'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu'" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu'" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="join/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu()"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6|org.eventb.core.guard#."/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6|org.eventb.core.guard#."/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu()"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="join/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member∪{n})" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#join\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="join/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(member∪{n})∩(waiting ∖ {n})=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#join\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="join/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting ∖ {n})" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#join\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu(" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPClub_cu()" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu(" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∈waiting" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="n∉member" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6|org.eventb.core.guard#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu(" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu()" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(member)&lt;500" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#6|org.eventb.core.guard#."/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="join_queue/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="83">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu))"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu))"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="join_queue/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="member∩(waiting∪{n})=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#join_queue\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="join_queue/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting∪{n})" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#join_queue\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu)" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPClub_cu))" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu)" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∉member" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="n∉waiting" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7|org.eventb.core.guard#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu)" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu))" org.eventb.core.poStamp="85">
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(member)&lt;500" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#7|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="remove/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu*"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member ∖ {n})" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#remove\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="remove/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu*"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(member ∖ {n})∩waiting=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#remove\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu*" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu*" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu*" org.eventb.core.poStamp="81">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#8|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∈member" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#8|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="remove_queue/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu+"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="member∩(waiting ∖ {n})=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#remove_queue\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="remove_queue/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu+"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting ∖ {n})" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#remove_queue\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu+" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="waiting'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu+" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu+" org.eventb.core.poStamp="81">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#9|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∈waiting" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#9|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="jump_queue/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="84">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu,)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu,)"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="jump_queue/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="86">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu,"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member∪{n})" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#jump_queue\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="jump_queue/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="86">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu,"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(member∪{n})∩waiting=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#jump_queue\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu," org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="member'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPClub_cu,)" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu," org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∉waiting" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="n∉member" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu," org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTHYPClub_cu,)" org.eventb.core.poStamp="86">
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(member)&lt;500" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#:|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="query_membership/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu-"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(member)∈ℕ" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#&gt;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#query_membership\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="query_membership/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu-"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#&gt;|org.eventb.core.action#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#&gt;|org.eventb.core.action#'"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu-"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu-" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="count'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu-" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu-" org.eventb.core.poStamp="81"/>
+    <org.eventb.core.poSequent name="query_queue/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu."/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(waiting)∈ℕ" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#?"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poSequent#query_queue\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="query_queue/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="82">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu."/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(waiting)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#?|org.eventb.core.action#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.event#?|org.eventb.core.action#'"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTALLHYPClub_cu."/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTClub_cu." org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poIdentifier name="count'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClub_cu." org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#EVTIDENTClub_cu." org.eventb.core.poStamp="81"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Club/Club.bpo|org.eventb.core.poFile#Club|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="81">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="member⊆NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="waiting⊆NAMES" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="count∈ℕ" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#="/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="finite(member)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="member∩waiting=(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="finite(waiting)" org.eventb.core.source="/Club/Club.bum|org.eventb.core.machineFile#Club|org.eventb.core.invariant#C"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

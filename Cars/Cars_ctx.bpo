@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="CAR" org.eventb.core.type="ℙ(CAR)"/>
+        <org.eventb.core.poIdentifier name="OWNER" org.eventb.core.type="ℙ(OWNER)"/>
+        <org.eventb.core.poIdentifier name="RESPONSE" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Cars/Cars_ctx.bpo|org.eventb.core.poFile#Cars_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="RESPONSE∈BOOL" org.eventb.core.source="/Cars/Cars_ctx.buc|org.eventb.core.contextFile#Cars_ctx|org.eventb.core.axiom#*"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="owners≔∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="cars≔∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="owner:∈OWNER" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="car:∈CAR" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="response≔FALSE" org.eventb.core.label="act5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="Cars_ctx"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="cars"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="car"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="owner"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="owners"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv1" org.eventb.core.predicate="owners∈ℙ(OWNER)"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv2" org.eventb.core.predicate="cars∈OWNER⤔CAR"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="inv3" org.eventb.core.predicate="owners=dom(cars)"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="inv4" org.eventb.core.predicate="owner∈OWNER"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="inv5" org.eventb.core.predicate="car∈CAR"/>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="register">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="o"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="c"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="o∈OWNER"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="c∈CAR"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="c∉ran(cars)"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="o∉owners"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="owners≔owners ∪ {o}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="cars≔cars ∪ {o↦c}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="deregister">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="o"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="o∈owners"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="owners≔owners∖{o}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="cars≔{o}⩤cars" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="vehicle">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="o"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="o∈OWNER"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="o∈owners"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="car≔cars(o)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="owner">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="v"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="v∈CAR"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="v∈ran(cars)"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="owner≔cars∼(v)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="change_register">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="o"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="c"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="o∈OWNER"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="o∈owners"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="c∈CAR"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="c∉ran(cars)"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="cars ≔ cars  {o↦c}" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="o∈dom(cars)"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="drugs_check">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="cars≠∅"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="car :∈ {c ∣ c ∈ ran(cars) ∧ cars∼(c) ∈ dom(cars)} " org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="8" org.eventb.core.identifier="response"/>
+    <org.eventb.core.invariant name="9" org.eventb.core.label="inv6" org.eventb.core.predicate="response∈BOOL"/>
+    <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="registered">
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="o"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="o∈dom(cars)"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="response≔bool(card(cars[{o}]) &gt; 1)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
